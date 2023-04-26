@@ -1,0 +1,53 @@
+:root {
+  --cor-de-fundo: rgba(248, 248, 217, 0.978);
+  --cor-vinho: rgb(50, 2, 2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cor-de-fundo);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: var(--cor-vinho);
+}
+
+hr {
+  font-weight: bold;
+  height: 4px;
+  background: var(--cor-vinho);
+  margin-bottom: 10px;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.game button {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border-color: var(--cor-vinho);
+  cursor: pointer;
+  font-size: 50px;
+  background: var(--cor-de-fundo);
+}
